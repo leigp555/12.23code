@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>div{
+          width: 200px;
+          height: 200px;
+          border:1px solid red;
+      }</style>
+  </head>
+  <body>
+    <iframe src="" frameborder="0"></iframe>
+    <a href="" target=""></a>
+
+      <img id="abc" width="200px" src="/1.e2c48800.jpg" alt="刘亦菲">
+
+    <script>abc.onload = function () {
+  console.log("图片加载成功");
+};
+
+abc.onerror = function () {
+  console.log("图片加载失败");
+  abc.src = "./2.jpg";
+};</script>
+    <div></div>
+  </body>
+</html>

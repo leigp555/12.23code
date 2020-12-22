@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+
+<!-- 
+<table></table>的三种样式
+1.table-layout 
+  a.auto 默认样式
+  b.fixed 
+
+2.border-collapse
+  a.
+3.border-spacing -->
+
+
+
+    <style>
+    .a{
+        width:600px;
+        height: 200px;
+         table-layout: auto;      /*  表格根据字体大小自动调节 */
+        border-spacing: 5px;         /*   调整表格之间的间隙 */
+        border-collapse: collapse;     /* 使表格之间无间隙合并表格 */
+       
+    }
+    td,th{
+        border:1px solid red;
+    }
+    </style>
+
+
+
+
+
+  </head>
+  <body>
+    <!-- <table class="table2">
+      <thead>
+        <tr>
+          <th></th>
+         <th></th>表示表头 -->
+        <!-- </tr> -->
+        <!-- <tr></tr>   table row 表示一行 -->
+      <!-- </thead>
+      <tbody>
+        <td></td> -->
+        <!-- <td></td>表示数据 -->
+      <!-- </tbody>
+      <tfoot></tfoot>
+    </table>  -->
+
+
+
+
+
+    <table class="a">
+        <thead>
+            <tr>
+                <th></th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>英语</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小明</td>
+                <td>123</td>
+                <td>22</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>小红</td>
+                <td>123</td>
+                <td>22</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>大白</td>
+                <td>123</td>
+                <td>22</td>
+                <td>56</td>
+            </tr>
+            
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总和</td>
+                <td>200</td>
+                <td>300</td>
+                <td>500</td>
+            </tr>
+        </tfoot>
+    </table>
+
+<!-- methon="POST/GET"   自动填充：  autocomplete="on/off" target用法与img标签相同-->
+    <form action="输入路径" method="POST" autocomplete="on" target="aa">
+        <input name="username" type="text">
+        <input type="submit" value="不准提交">
+        <button type="submit"> <strong>要提交</strong> </button>    
+    </form>
+    <iframe name="aa" src="index.html" frameborder="0"></iframe>
+  </body>
+</html>
